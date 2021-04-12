@@ -56,9 +56,11 @@ Sample1_lane1_20200324000_S1_L001_R2_001.fastq.gz (UMI sequences for deduping)
 
 Sample1_lane1_20200324000_S1_L001_R3_001.fastq.gz (reverse)
 
-Users must provide a path to their own trim_galore,samtools, bedtools, bowtie, and bedGraphtoBigWig installations.
+Users must provide a path to their own trim_galore,samtools, bedtools, bowtie, and bedGraphtoBigWig installations inside this program.
 
 Adapter sequences are hard coded but can be changed as per the users preference in the TRIM function.
+
+Samples sequenced in 2 lanes are automatically merged into one alignment file as long the lane #'s are mentioned in the Sample file name following the above format.
 
 ### Output:
 A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
