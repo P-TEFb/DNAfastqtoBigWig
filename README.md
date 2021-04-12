@@ -3,7 +3,16 @@ Converts fastq.gz files into bigwig tracks for data visusalization on UCSC brows
 
 ## Usage:
 ```
-DNAfastqtoBigWig <URL> <fastq folder> <sample #'s> <min insert> <max insert> <# of threads> <bowtie index> <chr size file> <genome assembly> <sample key>
+DNAfastqtoBigWig <URL> \
+                 <fastq folder> \
+                 <sample #'s> \
+                 <min insert> \
+                 <max insert> \
+                 <# of threads> \
+                 <bowtie index> \
+                 <chr size file> \
+                 <genome assembly> \
+                 <sample key>
 ```
 ### Parameter description:
 ```
