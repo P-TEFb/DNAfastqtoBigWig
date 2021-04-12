@@ -37,7 +37,7 @@ sample_key: provide sample key in a .csv format where sample#'s and sample names
 ```
 ## Requirements:
 Python libraries: joblib, glob
-Software requirements: Samtools,bedtools,bowtie,trim_galore( , and bedGraphToBigWig (v4).
+Software requirements: Samtools(v1.7), bedtools(v2.26.0), bowtie(1.2.2), trim_galore(0.6.0), and bedGraphToBigWig(v4).
 ### Output:
 A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
 
