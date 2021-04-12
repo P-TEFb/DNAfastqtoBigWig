@@ -38,7 +38,7 @@ sample_key: provide sample key in a .csv format where sample#'s and sample names
 ## Requirements:
 Python libraries: joblib, glob
 
-Software requirements: Samtools(v1.7), bedtools(v2.26.0), bowtie(1.2.2), trim_galore(0.6.0), and bedGraphToBigWig(v4).
+Software requirements: samtools(v1.7), bedtools(v2.26.0), bowtie(1.2.2), trim_galore(0.6.0), and bedGraphToBigWig(v4).
 
 This program is designed to run on paired end data only. Sample file names must follow the following format and order:
 
