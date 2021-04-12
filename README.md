@@ -1,8 +1,11 @@
 # DNAfastqtoBigWig
 Converts fastq.gz files for a sample into bigwig tracks for data visusalization on UCSC browser or IGV.
-Usage: DNAfastqtoBigWig <URL> <fastq folder> <sample #'s> <min insert> <max insert> <# of threads> <bowtie index> <chr size file> <genome assembly> <sample key>
 
-Description of parameters mentioned within <>
+## Usage:
+DNAfastqtoBigWig <URL> <fastq folder> <sample #'s> <min insert> <max insert> <# of threads> <bowtie index> <chr size file> <genome assembly> <sample key>
+
+### Parameter description:
+```
 URL: provide a link to download the data.
 fastq folder: provide a path/foldername to download all the fastq files.
 sample #'s: provide the sample numbers for DNASEQ such as 1-10 or 1-5,7-8 or for single sample 6-6.
@@ -15,3 +18,4 @@ chr size file: provide the path to the combined chromsome size fasta file of onl
                and cut -f1,2 combined.genome.fa.fai > combined.genome.sizes.
 genome assembly: provide a comma separated list of genome assemblies used in the sequencing such as hg38,KF297339.1,JQCY02.1
 sample_key: provide sample key in a .csv format where sample#'s and sample names are separated by a comma or simply mention no.
+```
