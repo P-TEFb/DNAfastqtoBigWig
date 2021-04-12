@@ -37,7 +37,20 @@ sample_key: provide sample key in a .csv format where sample#'s and sample names
 ```
 ## Requirements:
 Python libraries: joblib, glob
+
 Software requirements: Samtools(v1.7), bedtools(v2.26.0), bowtie(1.2.2), trim_galore(0.6.0), and bedGraphToBigWig(v4).
+
+This program is designed to run on paired end data only. Sample file names must follow the following format and order:
+
+Format:
+```
+Sample#_lane#_yearmonthdate000_Sequencing#_Lane#_Read#_001.fastq.gz
+```
+Order:
+Sample1_lane1_20200324000_S1_L001_R1_001.fastq.gz (forward)
+Sample1_lane1_20200324000_S1_L001_R2_001.fastq.gz (UMI sequences for deduping)
+Sample1_lane1_20200324000_S1_L001_R3_001.fastq.gz (reverse)
+
 ### Output:
 A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
 
