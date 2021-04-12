@@ -60,6 +60,8 @@ Adapter sequences are hard coded but can be changed as per the users preference 
 
 Samples sequenced in 2 lanes are automatically merged into one alignment file as long the lane #'s are mentioned in the sample file name following the above format.
 
+If sample numbers are mentioned such as Sample_# the program will produce errors and exit.
+
 ### Output:
 A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
 
