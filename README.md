@@ -5,7 +5,7 @@ Author: Mrutyunjaya Parida, David Price Lab, UIOWA
 
 ## Usage:
 DNAfastqtoBigWig runs on Python 2.7+. It is a linux based, multi-thread capable, Next Generation Sequencing (NGS) data analysis program with a command line interface.
-It looks for 10 parameters in the user input. If the number of parameters are less than 10 the program displays the following usage example and parameter description prior to exiting the run.
+It checks for 10 parameters in the user input. If the number of parameters are less than 10 the program displays the following usage example and parameter description prior to exiting the run.
 ```
 python DNAfastqtoBigWig <URL> \
                  <fastq folder> \
@@ -43,11 +43,9 @@ Software requirements: samtools(v1.7), bedtools(v2.26.0), bowtie(1.2.2), trim_ga
 This program is designed to run on paired end data only. Sample file names must follow the following format and order:
 
 Format:
-
 ```
 Sample#_lane#_yearmonthdate000_Sequencing#_Lane#_Read#_001.fastq.gz
 ```
-
 Order:
 
 Sample1_lane1_20200324000_S1_L001_R1_001.fastq.gz (forward)
@@ -60,7 +58,7 @@ Users must provide a path to their own trim_galore,samtools, bedtools, bowtie, a
 
 Adapter sequences are hard coded but can be changed as per the users preference in the TRIM function.
 
-Samples sequenced in 2 lanes are automatically merged into one alignment file as long the lane #'s are mentioned in the Sample file name following the above format.
+Samples sequenced in 2 lanes are automatically merged into one alignment file as long the lane #'s are mentioned in the sample file name following the above format.
 
 ### Output:
 A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
