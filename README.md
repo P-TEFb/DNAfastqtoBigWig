@@ -1,9 +1,10 @@
 # DNAfastqtoBigWig
-Converts fastq.gz files for a sample into bigwig tracks for data visusalization on UCSC browser or IGV.
+Converts fastq.gz files into bigwig tracks for data visusalization on UCSC browser or IGV.
 
 ## Usage:
+```
 DNAfastqtoBigWig <URL> <fastq folder> <sample #'s> <min insert> <max insert> <# of threads> <bowtie index> <chr size file> <genome assembly> <sample key>
-
+```
 ### Parameter description:
 ```
 URL: provide a link to download the data.
