@@ -37,3 +37,5 @@ sample_key: provide sample key in a .csv format where sample#'s and sample names
 ```
 
 ### Output:
+A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
+Based on the example run the BIGWIG folder should be under /home/xyz-user/fastq-folder/MAPPED/BIGWIG.
