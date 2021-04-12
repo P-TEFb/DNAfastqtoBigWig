@@ -5,7 +5,7 @@ Author: Mrutyunjaya Parida, David Price Lab, UIOWA
 
 ## Usage:
 DNAfastqtoBigWig runs on Python 2.7+. It is a linux based, multi-thread capable, Next Generation Sequencing (NGS) data analysis program with a command line interface.
-It looks for 10 parameters in the user input. If the number of parameters are less than 10 the program displays the usage example and parameter description prior to exiting the run.
+It looks for 10 parameters in the user input. If the number of parameters are less than 10 the program displays the following usage example and parameter description prior to exiting the run.
 ```
 python DNAfastqtoBigWig <URL> \
                  <fastq folder> \
