@@ -18,7 +18,7 @@ DNAfastqtoBigWig <URL> \
 ```
 URL: provide a link to download the data.
 fastq folder: provide a path/foldername to download all the fastq files.
-sample #'s: provide the sample numbers for DNASEQ such as 1-10 or 1-5,7-8 or for single sample 6-6.
+sample #'s: provide the sample numbers such as 1-10 or 1-5,7-8 or for single sample 6-6.
 min insert: <int> provide the minimum length of an insert.
 max insert: <int> provide the maximum length of an insert.
 threads: <int> provide the number of threads. For example, given there are 80 threads, you may assign a min of 1 or 8 threads for each of 10 samples.
