@@ -16,6 +16,7 @@ python DNAfastqtoBigWig <URL> \
                  <chr size file> \
                  <genome assembly> \
                  <sample key>
+                 
 Example run: python  DNAfastqtoBigWig www.DNA-Seqdata.com /home/xyz-user/fastq-folder 1-10 18 1000 8 /home/xyz-user/hg38-bowtie-index /home/xyz-user/hg38-chrom.sizes hg38 samplekey.csv                 
 ```
 ### Parameter description:
