@@ -48,7 +48,9 @@ Sample#_lane#_yearmonthdate000_Sequencing#_Lane#_Read#_001.fastq.gz
 ```
 Order:
 Sample1_lane1_20200324000_S1_L001_R1_001.fastq.gz (forward)
+
 Sample1_lane1_20200324000_S1_L001_R2_001.fastq.gz (UMI sequences for deduping)
+
 Sample1_lane1_20200324000_S1_L001_R3_001.fastq.gz (reverse)
 
 Users must provide a path to their own trim_galore,samtools, bedtools, bowtie, and bedGraphtoBigWig installations.
