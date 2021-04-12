@@ -43,10 +43,13 @@ Software requirements: samtools(v1.7), bedtools(v2.26.0), bowtie(1.2.2), trim_ga
 This program is designed to run on paired end data only. Sample file names must follow the following format and order:
 
 Format:
+
 ```
 Sample#_lane#_yearmonthdate000_Sequencing#_Lane#_Read#_001.fastq.gz
 ```
+
 Order:
+
 Sample1_lane1_20200324000_S1_L001_R1_001.fastq.gz (forward)
 
 Sample1_lane1_20200324000_S1_L001_R2_001.fastq.gz (UMI sequences for deduping)
