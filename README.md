@@ -1,5 +1,5 @@
 # DNAfastqtoBigWig
-Converts fastq.gz files into bigwig tracks for data visusalization on UCSC browser or IGV.
+Converts fastq.gz files into bigwig tracks for visusalization on UCSC browser or IGV.
 
 Author: Mrutyunjaya Parida, David Price Lab, UIOWA
 
