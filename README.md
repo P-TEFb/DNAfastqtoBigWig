@@ -38,7 +38,7 @@ sample_key: provide sample key in a .csv format where sample#'s and sample names
 ## Requirements:
 Python libraries: ``` joblib, and glob. ```
 
-Software requirements: ``` samtools(v1.7), bedtools(v2.26.0), bowtie(1.2.2), trim_galore(0.6.0), and bedGraphToBigWig(v4). ```
+Software requirements: ``` samtools(v1.14), bedtools(v2.29.1), bowtie(1.3.1), trim_galore(0.6.0), and bedGraphToBigWig(v4). ```
 
 This program is designed to run on paired end data only. Sample file names must follow the following format and order:
 
@@ -60,7 +60,7 @@ Adapter sequences are hard coded but can be changed as per the users preference 
 
 Samples sequenced in 2 lanes are automatically merged into one alignment file as long the lane #'s are mentioned in the sample file name following the above format.
 
-If sample numbers are mentioned such as Sample_# the program will produce errors and exit.
+Please make sure that the sample numbers are mentioned in Sample# format without a delimiter. If sample numbers are mentioned such as Sample_# the program will produce errors and exit.
 
 ### Output:
 A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
