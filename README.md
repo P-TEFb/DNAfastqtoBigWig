@@ -42,7 +42,7 @@ sample_key: provide sample key in a .csv format where sample#'s and sample names
             Sample2,Control2
             Sample3,Exp1
             Sample4,Exp2
-or simply mention no.
+            or simply mention no.
 
 ```
 ## Requirements:
