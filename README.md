@@ -37,7 +37,7 @@ chr size file: provide the path to the combined chromsome size fasta file of onl
                If you are trying to generate a chromsome size file use samtools faidx combined.genome.fa
                and cut -f1,2 combined.genome.fa.fai > combined.genome.sizes.
 genome assembly: provide a comma separated list of genome assemblies used in the sequencing such as hg38,KF297339.1.
-sample_key: provide sample key in a .csv format where sample#'s and sample names are separated by a comma 
+sample_key: provide sample key in a .csv format where sample#'s and sample names are separated by a comma as follows:
             Sample1,Control1
             Sample2,Control2
             Sample3,Exp1
