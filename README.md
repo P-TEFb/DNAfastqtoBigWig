@@ -49,8 +49,6 @@ sample_key: provide sample key in a .csv format where sample#'s and sample names
 ## Requirements:
 Python libraries: ``` joblib, and glob. ```
 
-Software requirements: ``` zcat (v 1.10), samtools(v1.14), bedtools(v2.29.1), bowtie(1.3.1), trim_galore(0.6.0), and bedGraphToBigWig(v4). ```
-
 This program is designed to run on paired end data only. Sample file names must follow the following format and order:
 
 Format:
@@ -64,8 +62,6 @@ Sample1_lane1_20200324000_S1_L001_R1_001.fastq.gz (forward)
 Sample1_lane1_20200324000_S1_L001_R2_001.fastq.gz (UMI sequences for deduping)
 
 Sample1_lane1_20200324000_S1_L001_R3_001.fastq.gz (reverse)
-
-Path to trim_galore,samtools, bedtools, bowtie, and bedGraphtoBigWig installations are hardcoded inside this program. They can be changed based on user preferences.
 
 Fastq files must be in fastq.gz format for the program to run. 
 
