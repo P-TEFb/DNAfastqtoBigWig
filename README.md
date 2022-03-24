@@ -20,10 +20,10 @@ python DNAfastqtoBigWig.py <URL> \
                  <sample key>
                  
 Example run: python  DNAfastqtoBigWig www.DNA-Seqdata.com /home/xyz-user/fastq-folder 1-10 18 \
-             1000 8 /home/xyz-user/genome-bowtie-index /home/xyz-user/genome-chrom.sizes hg38,KF297339.1 samplekey.csv                 
+             1000 8 /home/xyz-user/genome-hg38-KF297339.1 /home/xyz-user/genome-chrom.sizes hg38,KF297339.1 samplekey.csv                 
 ```
 
-Note: The genome-bowtie-index consists of both the human (hg38) and the HCMV TB40e (KF297339.1) genomes. To create a bowtie index like this I combined the human and HCMV genomes into one fasta file and ran bowtie-build on this combined.fasta file.
+Note: The genome-hg38-KF297339.1 index consists of both the human (hg38) and the HCMV TB40e (KF297339.1) genomes. To create a bowtie index like this I combined the human and HCMV genomes into one fasta file and ran bowtie-build on this combined.fasta file.
 ```
 bowtie-build reference_sequence.fasta index_name
 Example run: bowtie-build /home/xyz-user/genome-hg38-KF297339.1.fa /home/xyz-user/genome-hg38-KF297339.1
