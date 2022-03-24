@@ -27,7 +27,7 @@ Note: The genome-hg38-KF297339.1 index consists of both the human (hg38) and the
 ```
 bowtie-build reference_sequence.fasta index_name
 Example run: bowtie-build /home/xyz-user/genome-hg38-KF297339.1.fa /home/xyz-user/genome-hg38-KF297339.1
-Parallelized version for faster run: bowtie-build --threads 20 /home/xyz-user/genome-hg38-KF297339.1.fa /home/xyz-user/genome-hg38-KF297339.1 (If you have version 1.2.3 or higher and a multithreading library installed).
+Parallelized version for faster run: bowtie-build --threads 20 /home/xyz-user/genome-hg38-KF297339.1.fa /home/xyz-user/genome-hg38-KF297339.1 (If you have version 1.2.1 or higher and a multithreading library installed).
 ```
 I used a minimum insert length of 18bp and maximum insert length of 1000bp. My goal is retain all fragments between 18-1000bp for further analysis. Please consider the strategy suitable for your sequencing library.
 
