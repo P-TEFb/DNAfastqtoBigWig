@@ -23,7 +23,12 @@ Example run: python  DNAfastqtoBigWig www.DNA-Seqdata.com /home/xyz-user/fastq-f
              1000 8 /home/xyz-user/genome-bowtie-index /home/xyz-user/genome-chrom.sizes hg38,KF297339.1 samplekey.csv                 
 ```
 
-Note: The genome-bowtie-index consists of both the human (hg38) and the HCMV TB40e (KF297339.1) genomes. To create a bowtie index like this I combined the human and HCMV genomes into one fasta file and ran bowtie-build on this combined.fasta file.I used a minimum insert length of 18bp and maximum insert length of 1000bp. My goal is retain all fragments between 18-1000bp for further analysis. Please consider the strategy suitable for your sequencing library.
+Note: The genome-bowtie-index consists of both the human (hg38) and the HCMV TB40e (KF297339.1) genomes. To create a bowtie index like this I combined the human and HCMV genomes into one fasta file and ran bowtie-build on this combined.fasta file.
+```
+bowtie-build reference_sequence.fasta index_name
+Example run: bowtie-build /home/xyz-user/genome-hg38-KF297339.1.fa /home/xyz-user/genome-hg38-KF297339.1
+```
+I used a minimum insert length of 18bp and maximum insert length of 1000bp. My goal is retain all fragments between 18-1000bp for further analysis. Please consider the strategy suitable for your sequencing library.
 
 ### Parameter description:
 ```
