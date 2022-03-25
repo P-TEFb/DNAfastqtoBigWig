@@ -43,7 +43,7 @@ bowtie index: provide the path to the combined index of all the genomes that par
 chr size file: provide the path to the combined chromsome size fasta file of only the genomes used in the sequencing.
                If you are trying to generate a chromsome size file then do following commands:
                samtools faidx combined.genome.fa
-               cut -f1,2 combined.genome.fa.fai > combined.genome.sizes .
+               cut -f1,2 combined.genome.fa.fai > combined.genome.chrom.sizes .
 genome assembly: provide a comma separated list of genome assemblies used in the sequencing such as hg38,KF297339.1.
 sample_key: provide sample key in a .csv format where sample#'s and sample names are separated by a comma as follows:
             Sample1,Control1
